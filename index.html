@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<title>Generate SpriteSheet Of Sprite</title>
+		<meta charset="utf-8">
+		<meta author="Mikhael D'Amato">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<canvas style="border: 1px solid black;" id="canvas" width="1024" height="512"></canvas>
+		<section id="input-block" class="input-block">
+			<div class="load-container" id="load-container">
+				<!-- <div class="image-load">
+					<img/>
+					<label for="img-load" >encaminhar</label>
+					<input id="img-load" type='file' accept='file/*' onchange='openFile(event)'>
+				</div> -->
+				
+			</div>
+			<button onclick="newSprite(this)" class="new-sprite">
+				New Sprite
+			</button>
+
+			<div class="options">
+				<label id="lbl-options">Options</label>
+				<div class="input-options" >
+					<label for="sprite-w">Width</label>
+					<input placeholder="64" name="width"  id="sprite-w" type="text">
+				</div>
+				<div class="input-options">
+					<label for="sprite-h">Height</label>
+					<input placeholder="64" name="height" id="sprite-h" type="text">
+				</div>
+				<div class="input-options" >
+					<label for="sprite-offx">Offs-X</label>
+					<input placeholder="0" name="offset-x"  id="sprite-offx" type="text">
+				</div>
+				<div class="input-options">
+					<label for="sprite-offy">Offs-Y</label>
+					<input placeholder="0" name="offset-y" id="sprite-offy" type="text">
+				</div>
+				
+			</div>
+			<button onclick="downloadImage()" class="bnt-download">Download</button> <!-- End button-->
+		</section> <!-- end input-block -->
+		
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
