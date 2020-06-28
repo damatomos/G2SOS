@@ -1,3 +1,4 @@
+
 var loadContainer = window.document.getElementById('load-container');
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext('2d');
@@ -53,6 +54,11 @@ function drawSpriteSheet() {
 }
 
 function downloadImage() {
+
+    if ( sprites.length == 0 ) { 
+        alert('Create your sprite before downloading! ^^')
+        return false;
+    }
 
     let newCanvas = window.document.createElement('canvas');
     newCanvas.width = sprites.length * spriteWidth;
